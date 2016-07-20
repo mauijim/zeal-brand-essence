@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>zeal-brand-essence test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../zeal-brand-essence.html">
+  </head>
+  <body>
+
+    <test-fixture id="basic">
+      <template>
+        <zeal-brand-essence></zeal-brand-essence>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('zeal-brand-essence', function() {
+
+        test('instantiating the element works', function() {
+          let element = fixture('basic');
+          assert.equal(element.is, 'zeal-brand-essence');
+        });
+
+      });
+    </script>
+  </body>
+</html>
